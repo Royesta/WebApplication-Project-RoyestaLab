@@ -122,8 +122,4 @@ deployWar.dependsOn(war)
 
 task wrapper(type: Wrapper) { gradleVersion = '2.1' }
 
-tomcatRunWar {
-	contextPath = 'webapps'
-	httpPort = 8080
-	stopPort = 8191
-}
+tomcatRunWar.contextPath = ''
